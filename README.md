@@ -28,3 +28,7 @@ make run
 make build-prod
 make run-prod
 ```
+
+## Vercel Rust
+
+https://github.com/vercel-community/rust
