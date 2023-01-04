@@ -1,4 +1,4 @@
-# playground-rust
+# hello-rust
 
 ## Development
 
