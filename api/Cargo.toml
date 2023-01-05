@@ -26,7 +26,3 @@ futures = "0.3"
 [lib]
 name = "util"
 path = "_util.rs"
-
-[[bin]]
-name = "user"
-path = "/Users/antony.budianto/Documents/public/hello-rust/api/user.rs"
