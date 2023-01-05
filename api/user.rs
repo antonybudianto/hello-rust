@@ -1,7 +1,7 @@
+use firebase_jwt_rs::{verify_token, Claims};
 use http::StatusCode;
 use jsonwebtoken::TokenData;
 use std::error::Error;
-use util::{verify_token, Claims};
 use vercel_lambda::{error::VercelError, lambda, IntoResponse, Request, Response};
 
 #[tokio::main]
