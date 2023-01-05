@@ -3,11 +3,30 @@ name = "hello_rust_api"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
-rand = "0.8.0"
 jsonwebtoken = "8"
-serde = {version = "1.0", features = ["derive"] }
+serde_json = "1.0"
 http = "0.1"
 vercel_lambda = "*"
+exitfailure = "0.5.1"
+futures = "0.3"
+
+  [dependencies.tokio]
+  version = "1"
+  features = [ "full" ]
+
+  [dependencies.serde]
+  version = "1.0"
+  features = [ "derive" ]
+
+  [dependencies.reqwest]
+  version = "0.11.0"
+  features = [ "json" ]
+
+[lib]
+name = "util"
+path = "_util.rs"
+
+[[bin]]
+name = "user"
+path = "/Users/antony.budianto/Documents/public/hello-rust/api/user.rs"
